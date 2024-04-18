@@ -17,11 +17,6 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
 # ---------------------------------------------------------------------------------------
-# DEPENDENCIES
-# ---------------------------------------------------------------------------------------
-find_package(Eigen3 3.4 REQUIRED)
-
-# ---------------------------------------------------------------------------------------
 # CONFIGURATION
 # ---------------------------------------------------------------------------------------
 configure_file(
@@ -36,9 +31,10 @@ configure_file(
 add_library(smooth INTERFACE)
 target_include_directories(
   smooth INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
+                   $<INSTALL_INTERFACE:include>
 )
 target_link_libraries(smooth INTERFACE Eigen3::Eigen)
+add_library(smooth::smooth ALIAS smooth)
 
 # ---------------------------------------------------------------------------------------
 # INSTALLATION
