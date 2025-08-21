@@ -9,8 +9,7 @@
 #include "detail/so3.hpp"
 #include "lie_group_base.hpp"
 
-namespace smooth {
-inline namespace v1_0 {
+SMOOTH_BEGIN_NAMESPACE
 
 // \cond
 template<typename Scalar>
@@ -176,7 +175,7 @@ public:
    * @note Input is normalized inside constructor.
    */
   template<typename Derived>
-  SO3(const Eigen::QuaternionBase<Derived> & quat) : m_coeffs(quat.normalized().coeffs())
+  explicit SO3(const Eigen::QuaternionBase<Derived> & quat) : m_coeffs(quat.normalized().coeffs())
   {
     if (m_coeffs(3) < 0) { m_coeffs *= Scalar(-1); }
   }
@@ -267,5 +266,35 @@ class Map<const SO3<_Scalar>> : public SO3Base<Map<const SO3<_Scalar>>>
 using SO3f = SO3<float>;   ///< SO3 with float scalar representation
 using SO3d = SO3<double>;  ///< SO3 with double scalar representation
 
-}  // namespace v1_0
-}  // namespace smooth
+SMOOTH_END_NAMESPACE
+
+// Std format
+#if __has_include(<format>)
+#include <format>
+#include <string>
+
+template<class Scalar>
+struct std::formatter<smooth::SO3<Scalar>>
+{
+  std::string m_format;
+
+  constexpr auto parse(std::format_parse_context & ctx)
+  {
+    m_format = "{:";
+    for (auto it = ctx.begin(); it != ctx.end(); ++it) {
+      char c = *it;
+      m_format += c;
+      if (c == '}') return it;
+    }
+    return ctx.end();
+  }
+
+  auto format(const smooth::SO3<Scalar> & obj, std::format_context & ctx) const
+  {
+    const auto fmtSting = std::format("[{0}, {0}, {0}, {0}]", m_format);
+    return std::vformat_to(
+      ctx.out(), fmtSting, std::make_format_args(obj.quat().w(), obj.quat().x(), obj.quat().y(), obj.quat().z()));
+  }
+};
+
+#endif
