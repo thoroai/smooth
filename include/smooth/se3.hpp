@@ -10,8 +10,7 @@
 #include "lie_group_base.hpp"
 #include "so3.hpp"
 
-namespace smooth {
-inline namespace v1_0 {
+SMOOTH_BEGIN_NAMESPACE
 
 template<typename Scalar>
 class SE2;
@@ -191,7 +190,7 @@ public:
   /**
    * @brief Construct from Eigen transform.
    */
-  SE3(const Eigen::Transform<Scalar, 3, Eigen::Isometry> & t)
+  explicit SE3(const Eigen::Transform<Scalar, 3, Eigen::Isometry> & t)
   {
     Base::so3() = smooth::SO3<Scalar>(Eigen::Quaternion<Scalar>(t.rotation()));
     Base::r3()  = t.translation();
@@ -241,5 +240,44 @@ class Map<const SE3<_Scalar>> : public SE3Base<Map<const SE3<_Scalar>>>
 using SE3f = SE3<float>;   ///< SE3 with float
 using SE3d = SE3<double>;  ///< SE3 with double
 
-}  // namespace v1_0
-}  // namespace smooth
+SMOOTH_END_NAMESPACE
+
+// Std format
+#if __has_include(<format>)
+#include <format>
+#include <string>
+
+template<class Scalar>
+struct std::formatter<smooth::SE3<Scalar>>
+{
+  std::string m_format;
+
+  constexpr auto parse(std::format_parse_context & ctx)
+  {
+    m_format = "{:";
+    for (auto it = ctx.begin(); it != ctx.end(); ++it) {
+      char c = *it;
+      m_format += c;
+      if (c == '}') return it;
+    }
+    return ctx.end();
+  }
+
+  auto format(const smooth::SE3<Scalar> & obj, std::format_context & ctx) const
+  {
+    const auto fmtSting = std::format("r3: [{0}, {0}, {0}], so3: [{0}, {0}, {0}, {0}]", m_format);
+    return std::vformat_to(
+      ctx.out(),
+      fmtSting,
+      std::make_format_args(
+        obj.r3().x(),
+        obj.r3().y(),
+        obj.r3().z(),
+        obj.so3().quat().w(),
+        obj.so3().quat().x(),
+        obj.so3().quat().y(),
+        obj.so3().quat().z()));
+  }
+};
+
+#endif

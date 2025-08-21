@@ -2,16 +2,20 @@
 
 #pragma once
 
+#include <algorithm>
 #include <array>
 #include <cstddef>
 #include <cstdint>
 #include <functional>
 #include <numeric>
 #include <ranges>
+#include <tuple>
 #include <utility>
 
-namespace smooth {
-inline namespace v1_0 {
+#include "smooth/version.hpp"
+
+SMOOTH_BEGIN_NAMESPACE
+
 namespace utils {
 ////////////////////////////
 // INTERVAL BINARY SEARCH //
@@ -54,7 +58,7 @@ constexpr auto binary_interval_search(std::ranges::random_access_range auto && r
       alpha = (static_cast<double>(t) - static_cast<double>(*left)) / static_cast<double>(*(rght - 1) - *left);
     }
     const auto dist = static_cast<double>(std::distance(left, rght - 1));
-    pivot           = std::ranges::next(left, static_cast<intptr_t>(alpha * dist), rght - 2);
+    pivot           = std::ranges::next(left, static_cast<std::intptr_t>(alpha * dist), rght - 2);
 
     if (wo(*next(pivot), t) <= 0) {
       left = pivot + 1;
@@ -159,7 +163,7 @@ public:
       requires std::ranges::forward_range<R>
     {
       _Iterator tmp = *this;
-      ++this;
+      operator++();
       return tmp;
     }
 
@@ -174,7 +178,7 @@ public:
       requires std::ranges::bidirectional_range<R>
     {
       auto tmp = *this;
-      --this;
+      operator--();
       return tmp;
     }
 
@@ -218,7 +222,7 @@ struct PairwiseTransformClosure
 {
   F f_;
 
-  constexpr PairwiseTransformClosure(F && f) : f_(std::forward<F>(f)) {}
+  explicit constexpr PairwiseTransformClosure(F && f) : f_(std::forward<F>(f)) {}
 
   template<std::ranges::viewable_range R>
   constexpr auto operator()(R && r) const
@@ -281,9 +285,9 @@ public:
 
     _Iterator() = default;
 
-    constexpr _Iterator(auto &&... its) : its_(its...) {}
+    explicit constexpr _Iterator(auto &&... its) : its_(its...) {}
 
-    constexpr _Iterator(_Iterator<!Const> i)
+    explicit constexpr _Iterator(_Iterator<!Const> i)
       requires Const
         : its_(i.its_)
     {}
@@ -314,7 +318,7 @@ public:
       requires(std::ranges::forward_range<View> && ...)
     {
       _Iterator tmp = *this;
-      ++this;
+      operator++();
       return tmp;
     }
 
@@ -336,7 +340,7 @@ private:
 public:
   constexpr zip_view() = default;
 
-  constexpr zip_view(View... base) : bases_(base...) {}
+  explicit constexpr zip_view(View... base) : bases_(base...) {}
 
   constexpr _Iterator<false> begin()
   {
@@ -403,5 +407,5 @@ struct Zip
 inline constexpr detail::Zip zip;
 
 }  // namespace utils
-}  // namespace v1_0
-}  // namespace smooth
+
+SMOOTH_END_NAMESPACE

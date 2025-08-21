@@ -4,8 +4,9 @@
 
 #include <Eigen/Core>
 
-namespace smooth {
-inline namespace v1_0 {
+#include "smooth/version.hpp"
+
+SMOOTH_BEGIN_NAMESPACE
 
 /**
  * @brief Type trait that maps a type to Lie group operations.
@@ -66,6 +67,26 @@ public:
   using CastT = typename traits::template PlainObject<NewScalar>;
   //! Plain return type
   using PlainObject = CastT<Scalar>;
+
+  /*! @brief Access underlying storages */
+  template<bool = true>
+    requires(is_mutable)
+  auto & coeffs() const
+  {
+    return derived().coeffs();
+  }
+  /*! @brief Const access underlying storages */
+  const auto & coeffs() const { return cderived().coeffs(); }
+
+  /*! @brief Access raw pointer */
+  template<bool = true>
+    requires(is_mutable)
+  auto * data() const
+  {
+    return derived().data();
+  }
+  /*! @brief Const access raw pointer */
+  const auto * data() const { return cderived().data(); }
 
   /**
    * Assignment operation from other storage type.
@@ -477,5 +498,4 @@ using MapDispatch = std::conditional_t<
   ::Eigen::Map<T>,
   ::smooth::Map<T>>;
 
-}  // namespace v1_0
-}  // namespace smooth
+SMOOTH_END_NAMESPACE

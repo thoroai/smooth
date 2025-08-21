@@ -2,13 +2,14 @@
 
 #pragma once
 
+#include <tuple>
+
 #include "detail/bundle.hpp"
 #include "detail/macro.hpp"
 #include "detail/tn.hpp"
 #include "lie_group_base.hpp"
 
-namespace smooth {
-inline namespace v1_0 {
+SMOOTH_BEGIN_NAMESPACE
 
 // \cond
 // Specializing liebase_info for Eigen vectors makes it possible to use
@@ -149,7 +150,7 @@ public:
    */
   template<typename... S>
     requires(std::is_assignable_v<_Gs, S> && ...)
-  Bundle(S &&... gs)
+  explicit Bundle(S &&... gs)
   {
     const auto tpl = std::forward_as_tuple(gs...);
 #ifdef __clang__
@@ -203,5 +204,4 @@ class Map<const Bundle<_Gs...>> : public BundleBase<Map<const Bundle<_Gs...>>>
   SMOOTH_CONST_MAP_API();
 };
 
-}  // namespace v1_0
-}  // namespace smooth
+SMOOTH_END_NAMESPACE
