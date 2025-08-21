@@ -159,7 +159,7 @@ public:
       requires std::ranges::forward_range<R>
     {
       _Iterator tmp = *this;
-      ++this;
+      ++*this;
       return tmp;
     }
 
@@ -174,7 +174,7 @@ public:
       requires std::ranges::bidirectional_range<R>
     {
       auto tmp = *this;
-      --this;
+      --*this;
       return tmp;
     }
 
@@ -314,7 +314,7 @@ public:
       requires(std::ranges::forward_range<View> && ...)
     {
       _Iterator tmp = *this;
-      ++this;
+      ++*this;
       return tmp;
     }
 
