@@ -1,0 +1,37 @@
+<map id="include/smooth/spline/spline.hpp" name="include/smooth/spline/spline.hpp">
+<area shape="rect" id="Node000001" title="Piecewise polynomial splines on lie groups." alt="" coords="303,5,451,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="188,94,248,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="339,49,257,89,255,84,336,44"/>
+<area shape="rect" id="Node000003" href="$lie__groups_8hpp.html" title="Meta header to include all LieGroup concept model specifications." alt="" coords="273,94,388,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="368,48,348,82,343,79,363,45"/>
+<area shape="rect" id="Node000012" href="$common_8hpp_source.html" title=" " alt="" coords="536,168,631,193"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="391,45,417,81,453,118,492,141,531,159,529,164,489,146,450,122,413,85,387,48"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="463,94,608,120"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="418,44,499,84,497,89,415,49"/>
+<area shape="rect" id="Node000004" href="$lie__group_8hpp.html" title=" " alt="" coords="265,241,420,267"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="334,120,343,226,337,226,329,120"/>
+<area shape="rect" id="Node000008" href="$native_8hpp.html" title="Trait specialization to make native Lie groups LieGroups." alt="" coords="368,168,511,193"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="350,118,410,157,407,161,347,122"/>
+<area shape="rect" id="Node000009" href="$rn_8hpp.html" title="Trait specialization to make Eigen vectors LieGroups." alt="" coords="173,168,293,193"/>
+<area shape="poly" id="edge11_Node000003_Node000009" title=" " alt="" coords="315,122,263,161,260,156,312,118"/>
+<area shape="rect" id="Node000011" href="$scalar_8hpp.html" title="Trait specialization to make scalars LieGroups." alt="" coords="5,168,149,193"/>
+<area shape="poly" id="edge14_Node000003_Node000011" title=" " alt="" coords="288,123,135,166,134,160,287,118"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="258,389,333,414"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,270,308,290,292,316,287,345,290,373,285,374,282,345,286,314,304,286,324,266"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="390,389,474,414"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="361,265,386,286,409,314,422,343,430,373,425,374,417,345,404,316,382,290,358,269"/>
+<area shape="rect" id="Node000007" href="$manifold_8hpp.html" title=" " alt="" coords="300,315,395,341"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="346,267,348,299,343,300,341,267"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="341,342,316,378,311,374,337,339"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="364,339,408,376,404,380,360,343"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="425,196,372,234,369,230,422,192"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="253,192,313,230,310,235,250,196"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="76,241,195,267"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="218,196,166,234,162,230,215,192"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="123,191,283,234,282,239,121,196"/>
+<area shape="poly" id="edge16_Node000011_Node000010" title=" " alt="" coords="89,192,118,228,114,231,85,195"/>
+<area shape="poly" id="edge20_Node000012_Node000004" title=" " alt="" coords="543,196,399,239,397,234,542,191"/>
+<area shape="poly" id="edge19_Node000012_Node000006" title=" " alt="" coords="576,196,541,243,450,377,445,374,536,240,572,192"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="550,241,617,267"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="586,194,586,226,581,226,581,194"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="include/smooth/concepts/lie_group.hpp" name="include/smooth/concepts/lie_group.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,178,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,168,80,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,48,53,69,38,95,34,124,37,152,32,153,29,124,33,93,49,66,68,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="120,168,205,193"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,45,139,66,156,93,164,123,166,152,161,152,159,124,151,95,135,69,115,48"/>
+<area shape="rect" id="Node000004" href="$manifold_8hpp.html" title=" " alt="" coords="47,94,142,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,46,97,78,92,78,92,46"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="88,121,62,157,58,153,84,118"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="108,118,143,155,139,158,104,122"/>
+</map>

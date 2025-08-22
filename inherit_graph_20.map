@@ -1,0 +1,19 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classsmooth_1_1v1__0_1_1LieGroupBase.html" title=" " alt="" coords="5,235,193,275"/>
+<area shape="rect" id="Node000001" href="$classsmooth_1_1v1__0_1_1BundleBase.html" title="Base class for Bundle lie groups." alt="" coords="241,5,415,46"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="115,219,163,139,198,95,239,57,259,44,262,49,242,61,202,99,168,142,119,222"/>
+<area shape="rect" id="Node000002" href="$classsmooth_1_1v1__0_1_1C1Base.html" title="Base class for C1 Lie group types." alt="" coords="253,71,403,111"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="126,221,176,171,239,122,263,110,265,114,242,127,180,175,130,225"/>
+<area shape="rect" id="Node000003" href="$classsmooth_1_1v1__0_1_1GalileiBase.html" title="Base class for Galielei Lie group types." alt="" coords="243,136,413,177"/>
+<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="155,225,240,187,270,175,272,180,242,192,158,230"/>
+<area shape="rect" id="Node000004" href="$classsmooth_1_1v1__0_1_1SE2Base.html" title="Base class for SE2 Lie group types." alt="" coords="249,201,407,242"/>
+<area shape="poly" id="edge10_Node000000_Node000004" title=" " alt="" coords="208,236,248,231,248,236,209,242"/>
+<area shape="rect" id="Node000005" href="$classsmooth_1_1v1__0_1_1SE3Base.html" title="Base class for SE3 Lie group types." alt="" coords="249,267,407,307"/>
+<area shape="poly" id="edge11_Node000000_Node000005" title=" " alt="" coords="208,268,248,273,248,279,208,273"/>
+<area shape="rect" id="Node000006" href="$classsmooth_1_1v1__0_1_1SE__K__3Base.html" title="Base class for SE_k(3) Lie group types." alt="" coords="259,332,397,373"/>
+<area shape="poly" id="edge12_Node000000_Node000006" title=" " alt="" coords="159,280,242,317,272,329,270,334,240,321,157,285"/>
+<area shape="rect" id="Node000007" href="$classsmooth_1_1v1__0_1_1SO2Base.html" title="Base class for SO2 Lie group types." alt="" coords="248,397,408,438"/>
+<area shape="poly" id="edge13_Node000000_Node000007" title=" " alt="" coords="130,285,180,334,242,382,265,394,263,399,239,387,176,338,127,289"/>
+<area shape="rect" id="Node000008" href="$classsmooth_1_1v1__0_1_1SO3Base.html" title="Base class for SO3 Lie group types." alt="" coords="248,463,408,503"/>
+<area shape="poly" id="edge14_Node000000_Node000008" title=" " alt="" coords="119,288,168,367,202,410,242,448,262,460,259,464,239,452,198,414,164,370,115,290"/>
+</map>

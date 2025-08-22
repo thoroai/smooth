@@ -1,0 +1,11 @@
+<map id="include/smooth/manifolds/variant.hpp" name="include/smooth/manifolds/variant.hpp">
+<area shape="rect" id="Node000001" title="Trait specialization to make std::variant&lt;Manifold...&gt; a Manifold." alt="" coords="17,5,187,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,66,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,48,58,83,54,80,84,45"/>
+<area shape="rect" id="Node000003" href="$manifold_8hpp.html" title=" " alt="" coords="90,94,251,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,45,152,80,148,84,117,48"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="81,168,155,193"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="164,121,138,157,134,153,159,118"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="180,168,264,193"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="181,118,207,153,202,157,177,121"/>
+</map>

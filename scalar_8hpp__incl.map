@@ -1,0 +1,15 @@
+<map id="include/smooth/lie_groups/scalar.hpp" name="include/smooth/lie_groups/scalar.hpp">
+<area shape="rect" id="Node000001" title="Trait specialization to make scalars LieGroups." alt="" coords="112,5,242,46"/>
+<area shape="rect" id="Node000002" href="$lie__group_8hpp.html" title=" " alt="" coords="12,94,177,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,48,120,85,117,81,155,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="200,94,320,120"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="199,44,238,81,234,85,196,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,241,80,267"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,122,56,142,38,169,33,197,37,226,32,226,28,197,33,167,52,138,75,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="120,241,205,267"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="113,118,136,139,156,167,164,197,167,226,161,226,159,198,151,169,132,142,110,122"/>
+<area shape="rect" id="Node000005" href="$manifold_8hpp.html" title=" " alt="" coords="47,168,142,193"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="97,120,97,152,92,152,92,120"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="88,195,62,230,58,227,84,192"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="108,192,143,228,139,232,104,195"/>
+</map>

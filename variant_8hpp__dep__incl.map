@@ -1,0 +1,16 @@
+<map id="include/smooth/manifolds/variant.hpp" name="include/smooth/manifolds/variant.hpp">
+<area shape="rect" id="Node000001" title="Trait specialization to make std::variant&lt;Manifold...&gt; a Manifold." alt="" coords="359,5,528,46"/>
+<area shape="rect" id="Node000002" href="$manifolds_8hpp.html" title="Meta header to include all Manifold concept model specifications." alt="" coords="347,94,540,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="446,62,446,93,441,93,441,62"/>
+<area shape="rect" id="Node000003" href="$autodiff_8hpp.html" title="autodiff compatability header." alt="" coords="5,168,162,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="374,126,163,172,162,167,373,121"/>
+<area shape="rect" id="Node000004" href="$ceres_8hpp.html" title="ceres compatability header." alt="" coords="185,168,342,208"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="403,129,309,170,307,165,401,124"/>
+<area shape="rect" id="Node000005" href="$odeint_8hpp.html" title="boost::odeint compatability header." alt="" coords="365,168,522,208"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="446,135,446,167,441,167,441,135"/>
+<area shape="rect" id="Node000006" href="$diff_8hpp.html" title="Differentiation on Manifolds." alt="" coords="546,175,701,201"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="486,124,597,172,595,177,484,129"/>
+<area shape="rect" id="Node000007" href="$optim_8hpp.html" title="Non&#45;linear least squares optimization on Manifolds." alt="" coords="596,256,766,282"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="556,116,652,135,690,148,715,166,721,177,723,190,718,215,706,239,693,258,689,255,702,236,713,213,718,190,716,179,711,169,688,153,650,140,555,121"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="643,212,674,254,670,257,639,215"/>
+</map>

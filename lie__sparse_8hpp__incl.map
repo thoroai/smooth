@@ -1,0 +1,33 @@
+<map id="include/smooth/lie_sparse.hpp" name="include/smooth/lie_sparse.hpp">
+<area shape="rect" id="Node000001" title="Sparse versions of certain Lie group methods." alt="" coords="181,5,307,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,102,104,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,49,96,97,94,92,200,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="128,102,232,127"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,48,200,91,195,88,227,45"/>
+<area shape="rect" id="Node000004" href="$lie__groups_8hpp.html" title="Meta header to include all LieGroup concept model specifications." alt="" coords="256,102,360,127"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="260,45,292,88,288,91,256,48"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="384,94,538,135"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="294,44,398,85,396,90,292,49"/>
+<area shape="rect" id="Node000005" href="$lie__group_8hpp.html" title=" " alt="" coords="227,256,381,282"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="274,130,196,160,163,174,147,184,142,196,142,206,146,215,155,223,181,238,215,249,213,255,179,243,151,228,142,218,137,207,137,195,143,181,161,169,194,155,272,125"/>
+<area shape="rect" id="Node000009" href="$native_8hpp.html" title="Trait specialization to make native Lie groups LieGroups." alt="" coords="158,183,301,208"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="298,129,254,173,250,170,294,126"/>
+<area shape="rect" id="Node000010" href="$rn_8hpp.html" title="Trait specialization to make Eigen vectors LieGroups." alt="" coords="326,183,445,208"/>
+<area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="321,126,365,170,361,173,318,129"/>
+<area shape="rect" id="Node000012" href="$scalar_8hpp.html" title="Trait specialization to make scalars LieGroups." alt="" coords="470,183,613,208"/>
+<area shape="poly" id="edge15_Node000004_Node000012" title=" " alt="" coords="345,125,492,175,490,180,343,130"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="215,404,289,429"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="288,284,266,304,248,331,243,360,246,388,241,389,237,360,243,329,262,301,284,280"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="330,404,414,429"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="323,281,345,301,365,329,374,359,376,388,371,388,368,360,360,331,341,305,319,285"/>
+<area shape="rect" id="Node000008" href="$manifold_8hpp.html" title=" " alt="" coords="257,330,351,356"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="306,282,306,314,301,314,301,282"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="297,357,272,393,267,389,293,354"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="317,354,352,391,348,394,313,358"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="244,207,282,244,279,248,240,211"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="373,211,331,248,327,244,370,207"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="443,256,562,282"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="406,207,471,246,468,250,404,211"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="502,211,360,254,358,249,500,206"/>
+<area shape="poly" id="edge17_Node000012_Node000011" title=" " alt="" coords="537,210,519,244,514,241,532,207"/>
+</map>

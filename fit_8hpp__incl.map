@@ -1,0 +1,69 @@
+<map id="include/smooth/spline/fit.hpp" name="include/smooth/spline/fit.hpp">
+<area shape="rect" id="Node000001" title="Fit Spline and Bspline from data." alt="" coords="531,5,678,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="536,168,596,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="602,47,575,153,570,152,597,46"/>
+<area shape="rect" id="Node000003" href="$bspline_8hpp.html" title="B&#45;splines on Lie groups." alt="" coords="443,94,529,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="577,49,519,87,516,83,574,44"/>
+<area shape="rect" id="Node000024" href="$spline_8hpp.html" title="Piecewise polynomial splines on lie groups." alt="" coords="604,94,683,120"/>
+<area shape="poly" id="edge36_Node000001_Node000024" title=" " alt="" coords="617,45,633,79,628,81,612,48"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="707,94,828,120"/>
+<area shape="poly" id="edge41_Node000001_Node000026" title=" " alt="" coords="646,44,730,84,727,89,644,49"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="501,118,543,155,540,159,498,122"/>
+<area shape="rect" id="Node000004" href="$common_8hpp_source.html" title=" " alt="" coords="496,249,591,274"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="493,119,536,233,531,235,488,121"/>
+<area shape="rect" id="Node000010" href="$cumulative__spline_8hpp.html" title="Evaluation of cumulative Lie group splines." alt="" coords="311,168,461,193"/>
+<area shape="poly" id="edge13_Node000003_Node000010" title=" " alt="" coords="471,122,417,160,414,156,467,118"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="135,168,288,193"/>
+<area shape="poly" id="edge35_Node000003_Node000023" title=" " alt="" coords="443,122,274,166,272,161,442,117"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="425,330,491,356"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="532,277,484,321,480,317,529,273"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="604,551,688,577"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="550,274,640,535,634,537,545,276"/>
+<area shape="rect" id="Node000007" href="$lie__group_8hpp.html" title=" " alt="" coords="690,404,855,429"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="551,274,571,313,587,335,606,354,649,379,696,396,694,401,647,384,603,358,583,338,567,316,546,276"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="740,432,705,451,673,479,659,507,651,537,646,535,654,505,669,476,702,447,738,428"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="745,551,819,577"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="780,429,791,477,792,508,790,536,784,536,787,508,786,478,774,431"/>
+<area shape="rect" id="Node000009" href="$manifold_8hpp.html" title=" " alt="" coords="683,477,777,503"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="768,431,747,465,743,462,763,428"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="717,506,673,543,670,539,714,502"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="741,502,766,537,762,540,736,505"/>
+<area shape="poly" id="edge33_Node000010_Node000004" title=" " alt="" coords="411,192,507,239,505,244,409,196"/>
+<area shape="poly" id="edge15_Node000010_Node000005" title=" " alt="" coords="400,192,418,213,435,240,449,279,457,315,452,316,444,280,430,243,414,216,396,195"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="191,330,256,356"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="330,196,287,214,268,227,251,243,240,260,233,278,226,315,221,314,228,277,235,257,247,240,264,223,285,210,328,191"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="1004,404,1123,429"/>
+<area shape="poly" id="edge16_Node000010_Node000012" title=" " alt="" coords="461,186,725,213,849,228,920,239,988,251,1044,260,1069,268,1093,281,1116,301,1138,329,1143,348,1135,367,1120,383,1101,397,1098,393,1116,379,1131,364,1137,348,1133,331,1112,304,1090,286,1067,273,1043,266,987,257,919,244,848,233,725,219,461,192"/>
+<area shape="rect" id="Node000013" href="$lie__groups_8hpp.html" title="Meta header to include all LieGroup concept model specifications." alt="" coords="793,249,907,274"/>
+<area shape="poly" id="edge17_Node000010_Node000013" title=" " alt="" coords="458,191,778,245,777,251,457,197"/>
+<area shape="rect" id="Node000017" href="$basis_8hpp.html" title="Compile&#45;time polynomial manipulation." alt="" coords="34,249,186,274"/>
+<area shape="poly" id="edge27_Node000010_Node000017" title=" " alt="" coords="344,196,168,247,166,242,343,191"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="260,241,421,282"/>
+<area shape="poly" id="edge34_Node000010_Node000022" title=" " alt="" coords="381,195,362,229,357,227,377,192"/>
+<area shape="poly" id="edge18_Node000013_Node000007" title=" " alt="" coords="846,276,788,391,783,389,842,274"/>
+<area shape="rect" id="Node000014" href="$native_8hpp.html" title="Trait specialization to make native Lie groups LieGroups." alt="" coords="617,330,760,356"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="826,277,728,325,726,321,824,273"/>
+<area shape="rect" id="Node000015" href="$rn_8hpp.html" title="Trait specialization to make Eigen vectors LieGroups." alt="" coords="1004,330,1123,356"/>
+<area shape="poly" id="edge21_Node000013_Node000015" title=" " alt="" coords="884,273,1017,322,1015,327,882,278"/>
+<area shape="rect" id="Node000016" href="$scalar_8hpp.html" title="Trait specialization to make scalars LieGroups." alt="" coords="836,330,979,356"/>
+<area shape="poly" id="edge24_Node000013_Node000016" title=" " alt="" coords="861,273,892,316,887,319,857,276"/>
+<area shape="poly" id="edge20_Node000014_Node000007" title=" " alt="" coords="705,354,749,391,745,395,701,358"/>
+<area shape="poly" id="edge22_Node000015_Node000007" title=" " alt="" coords="1015,359,838,402,836,397,1013,354"/>
+<area shape="poly" id="edge23_Node000015_Node000012" title=" " alt="" coords="1066,356,1066,388,1061,388,1061,356"/>
+<area shape="poly" id="edge25_Node000016_Node000007" title=" " alt="" coords="886,359,810,398,808,394,883,354"/>
+<area shape="poly" id="edge26_Node000016_Node000012" title=" " alt="" coords="935,354,1024,394,1022,399,933,359"/>
+<area shape="poly" id="edge28_Node000017_Node000011" title=" " alt="" coords="129,273,195,319,192,323,126,277"/>
+<area shape="rect" id="Node000018" href="$static__matrix_8hpp.html" title="Utilities for compile&#45;time matrix algebra." alt="" coords="48,330,167,356"/>
+<area shape="poly" id="edge29_Node000017_Node000018" title=" " alt="" coords="112,275,111,315,106,314,107,275"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="5,404,55,429"/>
+<area shape="poly" id="edge30_Node000018_Node000019" title=" " alt="" coords="96,358,56,395,52,391,92,354"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="79,404,136,429"/>
+<area shape="poly" id="edge31_Node000018_Node000020" title=" " alt="" coords="110,356,110,388,105,388,105,356"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="160,404,274,429"/>
+<area shape="poly" id="edge32_Node000018_Node000021" title=" " alt="" coords="127,354,187,393,184,397,124,358"/>
+<area shape="poly" id="edge37_Node000024_Node000002" title=" " alt="" coords="632,122,592,159,588,155,628,118"/>
+<area shape="poly" id="edge39_Node000024_Node000004" title=" " alt="" coords="643,121,631,155,611,195,592,219,571,240,567,236,588,216,606,192,626,153,638,119"/>
+<area shape="poly" id="edge38_Node000024_Node000013" title=" " alt="" coords="684,116,773,142,811,155,832,166,842,181,849,199,854,233,848,234,844,200,838,184,828,170,809,160,771,147,683,121"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="672,168,817,193"/>
+<area shape="poly" id="edge40_Node000024_Node000025" title=" " alt="" coords="662,118,716,156,713,160,659,122"/>
+</map>
