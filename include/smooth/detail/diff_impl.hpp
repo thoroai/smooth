@@ -187,6 +187,11 @@ auto dr(auto && f, auto && x)
   } else if constexpr (D == Type::Analytic) {
     // Analytic
 
+    bool debug_print = false;
+
+    if(debug_print)
+      std::cout << "analytic diff: " << K << std::endl;
+
     if constexpr (K == 1) {
       return std::make_tuple(
         std::apply(f, x),
