@@ -10,6 +10,9 @@
 // TODO switch to autodiff::Real when it supports atan2
 // https://github.com/autodiff/autodiff/issues/185
 
+#include <algorithm>
+#include <utility>
+
 #include <autodiff/forward/dual.hpp>
 #include <autodiff/forward/dual/eigen.hpp>
 
@@ -20,8 +23,7 @@
 #include "smooth/detail/wrt_impl.hpp"
 #include "smooth/manifolds.hpp"
 
-namespace smooth {
-inline namespace v1_0 {
+SMOOTH_BEGIN_NAMESPACE
 
 /// @brief Specialize trait to make autodiff type a Manifold
 template<typename T>
@@ -109,5 +111,5 @@ auto dr_autodiff(auto && f, auto && x)
 }
 
 }  // namespace diff
-}  // namespace v1_0
-}  // namespace smooth
+
+SMOOTH_END_NAMESPACE

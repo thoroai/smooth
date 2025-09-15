@@ -2,13 +2,15 @@
 
 #pragma once
 
+#include <algorithm>
+#include <tuple>
 #include <type_traits>
+#include <utility>
 
 #include "../concepts/manifold.hpp"
 #include "utils.hpp"
 
-namespace smooth {
-inline namespace v1_0 {
+SMOOTH_BEGIN_NAMESPACE
 
 /**
  * @brief Compile-time size of a tuple of variables.
@@ -44,7 +46,7 @@ auto wrt_cast(auto && wrt)
 
   const auto f = [&]<std::size_t... Idx>(std::index_sequence<Idx...>) {
     return std::make_tuple(cast<Scalar>(std::get<Idx>(wrt))...);
-  };
+  };  // NOLINT
 
   return f(std::make_index_sequence<std::tuple_size_v<Wrt>>{});
 }
@@ -63,15 +65,9 @@ auto wrt_rplus(auto && wrt, const Eigen::MatrixBase<Derived> & a)
     const std::array<Eigen::Index, sizeof...(Idx)> ilen{dof(std::get<Idx>(wrt))...};
     const auto ibeg = utils::array_psum(ilen);
 
-    // clang-format off
     return std::make_tuple(
-      rplus(
-        std::get<Idx>(wrt),
-        a.template segment<std::get<Idx>(Nx)>(std::get<Idx>(ibeg), std::get<Idx>(ilen))
-      )...
-    );
-    // clang-format on
-  };
+      rplus(std::get<Idx>(wrt), a.template segment<std::get<Idx>(Nx)>(std::get<Idx>(ibeg), std::get<Idx>(ilen)))...);
+  };  // NOLINT
 
   return f(std::make_index_sequence<std::tuple_size_v<Wrt>>{});
 }
@@ -116,5 +112,4 @@ constexpr auto wrt_copy_if_const(std::tuple<T...> && in)
   return std::make_from_tuple<std::tuple<typename detail::remove_const_ref<T>::type...>>(std::move(in));
 }
 
-}  // namespace v1_0
-}  // namespace smooth
+SMOOTH_END_NAMESPACE

@@ -7,12 +7,13 @@
  * @brief Trait specialization to make std::variant<Manifold...> a Manifold.
  */
 
+#include <tuple>
 #include <variant>
 
-#include "../concepts/manifold.hpp"
+#include "smooth/concepts/manifold.hpp"
 
-namespace smooth {
-inline namespace v1_0 {
+SMOOTH_BEGIN_NAMESPACE
+
 namespace traits {
 /**
  * @brief Manifold model specification for std::variant<Manifold...>
@@ -30,7 +31,7 @@ struct man<std::variant<Ms...>>
 
   static inline Eigen::Index dof(const PlainObject & m)
   {
-    const auto visitor = []<Manifold Mi>(const Mi & x) { return traits::man<Mi>::dof(x); };
+    const auto visitor = []<Manifold Mi>(const Mi & x) { return traits::man<Mi>::dof(x); };  // NOLINT
     return std::visit(visitor, m);
   }
 
@@ -66,5 +67,5 @@ struct man<std::variant<Ms...>>
 };
 
 }  // namespace traits
-}  // namespace v1_0
-}  // namespace smooth
+
+SMOOTH_END_NAMESPACE

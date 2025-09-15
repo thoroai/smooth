@@ -7,18 +7,20 @@
  * @brief ceres compatability header.
  */
 
+#include <utility>
+
 #include <ceres/autodiff_manifold.h>
 #include <ceres/internal/autodiff.h>
 
 #define SMOOTH_DIFF_CERES
 
+#include "smooth/detail/traits.hpp"
 #include "smooth/detail/wrt_impl.hpp"
 #include "smooth/lie_group_base.hpp"
 #include "smooth/manifolds.hpp"
 #include "smooth/wrt.hpp"
 
-namespace smooth {
-inline namespace v1_0 {
+SMOOTH_BEGIN_NAMESPACE
 
 // mark Jet as a valid scalar
 template<typename T, int I>
@@ -100,7 +102,7 @@ auto dr_ceres(auto && f, auto && x)
     Eigen::Map<Eigen::Matrix<T, Ny, 1>> mo(out, ny);
     mo = rminus<CastT<T, Result>>(std::apply(f, wrt_rplus(wrt_cast<T>(x), mi)), cast<T, Result>(fval));
     return true;
-  };
+  };  // NOLINT
   const Scalar * a_ptr[1] = {a.data()};
   Scalar * jac_ptr[1]     = {jac.data()};
 
@@ -110,5 +112,4 @@ auto dr_ceres(auto && f, auto && x)
   return std::make_pair(std::move(fval), Eigen::Matrix<Scalar, Ny, Nx>(jac));
 }
 
-}  // namespace v1_0
-}  // namespace smooth
+SMOOTH_END_NAMESPACE

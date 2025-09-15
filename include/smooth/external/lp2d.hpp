@@ -3,10 +3,13 @@
 #pragma once
 
 #include <algorithm>
+#include <cstdint>
 #include <limits>
 #include <numeric>
 #include <queue>
 #include <ranges>
+#include <tuple>
+#include <utility>
 #include <vector>
 
 namespace lp2d {
@@ -52,8 +55,8 @@ inline std::tuple<Scalar, Scalar, Status> solve_impl(std::vector<HalfPlane> &);
  * If problem is infeasible yopt = inf
  */
 template<std::ranges::range R>
-inline std::tuple<Scalar, Scalar, Status>
-solve(Scalar cx, Scalar cy, const R & rows) requires(std::tuple_size_v<std::ranges::range_value_t<R>> == 3)
+inline std::tuple<Scalar, Scalar, Status> solve(Scalar cx, Scalar cy, const R & rows)
+  requires(std::tuple_size_v<std::ranges::range_value_t<R>> == 3)
 {
   const Scalar sqnorm = cx * cx + cy * cy;
 
@@ -196,7 +199,6 @@ inline std::optional<Scalar> find_candidate(std::vector<HalfPlane> & hps, Scalar
   // INTERSECT LOWERS AMONGST THEMSELVES
 
   for (auto it2 = hps.begin(); it2 != hps.end(); ++it2) {
-
     if (!active_y_lower(*it2)) { continue; }
 
     if (!it1_store.has_value()) {
